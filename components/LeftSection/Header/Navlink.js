@@ -6,10 +6,6 @@ cursor: pointer;
 display: flex;
 flex-direction: column;
 padding-left: 50px;
-
-@media only screen and (max-width: 1024px) {
-}
-      
 `
 
 export const NavLinks = styled.div`
@@ -18,6 +14,7 @@ display: flex;
 justify-content: flex-start;
 a {
     color: gray;
+    text-shadow: 1px 1px 1px black;
     text-decoration: none;
     padding: 0 15px;
 }

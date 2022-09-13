@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 //STYLES
 export const Wrapper = styled.div`
-line-height: 2;
 font-size: 22px;  
 display: flex;
 justify-content: center;
@@ -50,12 +49,14 @@ const AboutPortfolio = () => {
     <>
     <Wrapper id="contact">
     <Body>
-       <ul>
         <h4>Need a website? Or perhaps you have questions about web development or design?</h4>
-        <li>- For business inquiries... you can reach me at
-          <a href="mailto:devdesignsbyelsa@gmail.com">devdesignsbyelsa@gmail.com</a> </li>
-        <li>- You can also access my portfolio<a href="http://elsahovey.com">here</a> </li>
-       </ul>
+        <p>For business inquiries... you can reach me at
+          <a href="mailto:devdesignsbyelsa@gmail.com">devdesignsbyelsa@gmail.com</a> 
+          </p>
+          <br />
+        <p> You can also access my portfolio
+          <a href="http://elsahovey.com">here</a>
+           </p>
               </Body>
             </Wrapper>
     </>

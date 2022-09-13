@@ -9,10 +9,12 @@ font-size: 50px;
 font-weight: 900;
 padding-top: 70px;
 padding-left: 50px;
+background: #fff;
 
 a {
 text-decoration: none;
 color: gray;
+text-shadow: 1px 1px 1px black;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -22,7 +24,8 @@ color: gray;
 @media only screen and (max-width: 768px) {
   font-size: 20px;
   padding: 15px 0 5px 25px;
-   `
+}
+  `
 
    
 

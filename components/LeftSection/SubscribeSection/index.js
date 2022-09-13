@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 
  const MailchimpWrapper = styled.div`
-// background: green;
+ background: gray;
 margin-top: 385px;
 padding-left: 55px; 
 grid-area: right;
@@ -17,16 +17,17 @@ grid-template-areas:
 'a'
 'b';
  
-
 @media only screen and (max-width: 1024px) {
   padding: 0;
+  margin: 0;
 }
 `
 
  const CTA = styled.div`
-padding: 20px;  
+padding: 22px;  
 grid-area: a;
-color: #2a9d8f;
+// color: #2a9d8f;
+color: #fff;
 display: flex;
 justify-content: flex-end;
 flex-direction: column;
@@ -37,7 +38,10 @@ padding-top: 45px;
 `
 
  const ContentTitle = styled.h4`
-font-size: 22px;
+font-size: 30px;
+text-shadow: 1px 1px 1px black;
+color: #fff;
+
 
 @media only screen and (max-width: 768px) {
     margin: 0;
@@ -53,12 +57,13 @@ font-size: 22px;
 
 
  const ContentParagraph = styled.div`
-font-size: 18px;
-// padding-left: 10px;
-color: #000;
+font-size: 20px;
+color: #fff;
+text-shadow: 1px 1px 1px #000;
 a {
-  color: #000;
+  color: #fff;
   padding: 0 6px;
+  
 }
 
 @media only screen and (max-width: 834px) {
@@ -88,7 +93,7 @@ const SubscribeCTA = () => {
   
         <ContentParagraph>
       Regarding food, plants, and other writings...  Subscribe for post updates! 
-      <Link href="/newsletter">View newsletter</Link>
+      {/* <Link href="/newsletter">View newsletter</Link> */}
       
           </ContentParagraph>
         </CTA>

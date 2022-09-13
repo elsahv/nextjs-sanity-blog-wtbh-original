@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 height: 100vh;
 grid-area: a;
 overflow-x: auto;
-border-right: solid 2px gray;
+border-right: solid 2px #000;
 
 @media only screen and (max-width: 1024px) {
   height: auto;

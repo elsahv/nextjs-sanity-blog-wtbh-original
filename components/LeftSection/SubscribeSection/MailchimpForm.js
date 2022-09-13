@@ -5,15 +5,9 @@ import styled from 'styled-components'
 
 
 export const SubscribeContainer = styled.form`
-// background: teal;
 width: 100%;
 padding: 10px 10px 10px 20px;
-   
-@media only screen and (max-width: 600px) {
-  // margin: 20px;
-}
 `
-
 
 export const SubFormContainer = styled.div`
   display: flex;
@@ -25,21 +19,17 @@ export const SubFormContainer = styled.div`
   }
  `
 
-
-
-
 export const Input = styled.input`
 padding: 5px 10px 5px 10px;
 border-radius: 4px;
 border: 1px solid #000;
 font-size: 16px;
-background: aquamarine;
+background: #fff;
 
 @media (max-width: 600px) {
 width: 220px;
 }
 `
-
 
 export const Button = styled.button`
   padding: 5px 10px 5px 10px;
@@ -47,7 +37,8 @@ export const Button = styled.button`
   border: solid 2px black;
   border-radius: 4px;
   font-weight: bold;
-  background: aquamarine;
+  background: teal;
+  color: aquamarine;
   cursor: pointer;
       /* :disabled {
         background: #636262;

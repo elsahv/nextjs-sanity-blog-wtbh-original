@@ -2,57 +2,21 @@
 import { sanityClient, urlFor } from "../../client"
 import { PortableText } from '@portabletext/react'
 import styled from 'styled-components'
-import Subscribe from "../../components/MailchimpForm"
  
 //STYLES
-export const Banner = styled.div`
-grid-area: b;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 35px;
-text-shadow: 2px 2px 2px #000;
-color: #fff;
-border-bottom: solid 2px #000;
-text-transform: capitalize; 
-margin-bottom: 35px;
-padding: 15px;
-`
- 
-export const Grid = styled.div`
-margin: 0 200px;
-
-@media only screen and (max-width: 1024px) {
-  margin: auto;
-}
-`
-
-export const PostWrapper = styled.div`
-grid-area: a;
-// background: green;
-// margin-top: 150px;
-`
- 
 export const MainImgWrapper = styled.div`
+position: relative;
 display: flex;
 justify-content: center;
+margin-top: 100px;
 .img {
-  border: solid 2px black;
-  // width: 900px;
+   width: 1400px
+  
 }
-
-@media only screen and (max-width: 768px) {
-.img {
-  width: 500px;
-}
-}
-
-@media only screen and (max-width: 531px) {
-  .img {
-    width: 300px;
-  }
-  }
 `
+export const ImagesWrapper = styled.div`
+`
+
   
 export const Title = styled.h2`
 font-size: 30px;
@@ -77,34 +41,8 @@ text-align: left;
   margin: 30px;
 }
 `
-
-export const ImagesWrapper = styled.div`
-position: relative;
-width: 100%;
-display: flex;
-justify-content: center;
-.images {
-  border: solid 1px black;
-  width: 800px;
-}
-
-@media only screen and (max-width: 1024px) {
-.images {
-  width: 400px;
-}
-}
-
-@media only screen and (max-width: 531px) {
-  .images {
-    width: 200px;
-  }
-  }
-`
-//END STYLES
-
-
  
-
+//END STYLES
 
 const PostComponents = {
   types: {
@@ -130,28 +68,18 @@ const Post = ({
 }) => {
   return (
     <>
-       {/* <Banner>
-          <Title>{title}</Title>
-        </Banner> */}
-
-
-        <Grid>
-          <PostWrapper>
-     {/* <Title>{title}</Title> */}
+     <Title>{title}</Title>
        <MainImgWrapper>
         <img
                       src={urlFor(mainImage)} 
                       alt=""
                       className="img"
-                      // layout="responsive"
-                      layout="fill"
+                      layout="responsive"
                       />
 </MainImgWrapper>
-      {/* <BodyContent>
+      <BodyContent>
       <PortableText value={body} components={PostComponents} />
-      </BodyContent> */}
-      </PostWrapper>
-      </Grid>
+      </BodyContent>
     </>
   )
 }
