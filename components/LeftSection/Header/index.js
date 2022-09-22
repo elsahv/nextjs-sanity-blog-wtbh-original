@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
 background: #fff;
-padding: 60px 30px 0;
+padding: 80px 30px 0;
 `
 
 
