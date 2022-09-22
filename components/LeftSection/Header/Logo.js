@@ -12,6 +12,7 @@ line-height: 1;
 a {
 text-decoration: none;
 color: gray;
+text-shadow: 1px 1px 1px black;
 }
 
 @media only screen and (max-width: 1024px) {

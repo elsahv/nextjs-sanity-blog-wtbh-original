@@ -30,10 +30,10 @@ justify-content: center;
 align-items: center;
 position: relative;
 padding-bottom: 10px;
-padding-left: 50px;
-margin-top: 50px;
-color: coral;
-// text-shadow: 1px 1px 1px black;
+padding-left: 10px;
+margin-top: 100px;
+color: #fff;
+text-shadow: 1px 1px 1px coral;
 
 @media only screen and (max-width: 1024px) {
  font-size: 18px;
