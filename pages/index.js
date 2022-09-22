@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 
 // STYLES
+
 export const Content = styled.div`
 cursor: pointer;
 display: flex;
@@ -47,8 +48,7 @@ color: #fff ;
 
 export const ImgWrapper = styled.div`
 .img {
-  width: 1200px;
-  // height: 700px;
+  width: 1300px;
   border: solid 2px black;
 }
 

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
 padding-top: 100px;
 padding-left: 50px;
-  font-size: 35px;
+  font-size: 30px;
   text-shadow: 1px 1px 1px #000;
   color: #fff;
 
