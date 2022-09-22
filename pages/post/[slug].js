@@ -10,10 +10,10 @@ export const MainImgWrapper = styled.div`
 position: relative;
 display: flex;
 justify-content: center;
-margin-top: 30px;
+margin-top: 20px;
 
 .img {
-   width: 1400px;
+   width: 1380px;
    border: solid 2px black;
 }
 `
