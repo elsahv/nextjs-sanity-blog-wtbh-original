@@ -7,20 +7,18 @@ import styled from 'styled-components'
 export const SidebarWrapper = styled.div`
 text-align: center;
 padding: 10px;
-// display: none;
+display: none;
+
+
+ @media only screen and (max-width: 1024px) {
 position: absolute;
 top: 0;
 z-index: 1;
-
-// @media only screen and (max-width: 1024px) {
 display: block;
-// position: fixed;
-// top: 0;
-// z-index: 7500;
 background: coral;
 border: solid 2px black;
 width: 100%;
-// }
+ }
 
 @media only screen and (max-width: 500px) {
    display: block;

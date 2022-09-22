@@ -2,8 +2,41 @@
 import { sanityClient, urlFor } from "../../client"
 import { PortableText } from '@portabletext/react'
 import styled from 'styled-components'
+import LeftSection from "../../components/LeftSection"
  
 //STYLES
+
+
+const Wrapper = styled.div`
+position: absolute;
+top: 0;
+z-index: 12;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-areas:
+'a b b';
+
+@media only screen and (max-width: 1024px) {
+  margin-top: 90px;
+  grid-template-columns: 1fr;
+grid-template-areas:
+'b'
+'b'
+'a';
+}
+`
+
+const RightSection = styled.div`
+grid-area: b;
+height: 100vh;
+overflow-x: hidden;
+background: teal;
+
+@media only screen and (max-width: 1024px) {
+  height: auto;
+}
+`
+
 export const MainImgWrapper = styled.div`
 position: relative;
 display: flex;
@@ -68,6 +101,10 @@ const Post = ({
 }) => {
   return (
     <>
+    <Wrapper>
+       <LeftSection />
+
+       <RightSection>
      <Title>{title}</Title>
        <MainImgWrapper>
         <img
@@ -80,6 +117,8 @@ const Post = ({
       <BodyContent>
       <PortableText value={body} components={PostComponents} />
       </BodyContent>
+      </RightSection>
+      </Wrapper>
     </>
   )
 }
