@@ -9,7 +9,7 @@ padding-top: 10px;
 `
 
 export const NavLinks = styled.div`
-font-size: 22px;
+font-size: 30px;
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
