@@ -57,7 +57,8 @@ export const Button = styled.button`
 `
 
 export const SuccessState = styled.p`
-  color: #2a9d8f;;
+  color: aquamarine;
+  text-shadow: 1px 1px 1px black;
   padding-top: 20px;
 `
 
