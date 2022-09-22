@@ -5,9 +5,10 @@ import styled from 'styled-components'
 
 
 const LogoWrapper = styled.div`
-font-size: 50px;
+font-size: 45px;
 font-weight: 900;
 background: #fff;
+line-height: 1;
 a {
 text-decoration: none;
 color: gray;

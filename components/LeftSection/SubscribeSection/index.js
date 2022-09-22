@@ -7,7 +7,7 @@ import styled from 'styled-components'
  const MailchimpWrapper = styled.div`
  background: gray;
 margin-top: 405px;
-padding-left: 40px; 
+padding-left: 20px; 
 grid-area: right;
 border-bottom: solid 2px black;
 border-top: solid 2px black;
@@ -26,7 +26,6 @@ grid-template-areas:
  const CTA = styled.div`
 padding: 22px;  
 grid-area: a;
-// color: #2a9d8f;
 color: #fff;
 display: flex;
 justify-content: flex-end;
@@ -58,6 +57,7 @@ color: #fff;
 
  const ContentParagraph = styled.div`
 font-size: 20px;
+padding-top: 10px;
 color: #fff;
 text-shadow: 1px 1px 1px #000;
 a {
@@ -93,8 +93,6 @@ const SubscribeCTA = () => {
   
         <ContentParagraph>
       Regarding food, plants, and other writings...  Subscribe for post updates! 
-      {/* <Link href="/newsletter">View newsletter</Link> */}
-      
           </ContentParagraph>
         </CTA>
           <MailchimpContainer>
