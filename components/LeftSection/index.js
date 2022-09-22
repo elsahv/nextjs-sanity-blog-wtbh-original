@@ -10,7 +10,6 @@ overflow: hidden;
 grid-area: a;
 overflow-x: auto;
 border-right: solid 2px #000;
-// width: 80%;
 
 @media only screen and (max-width: 1024px) {
   height: auto;

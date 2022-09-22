@@ -5,16 +5,14 @@ import styled from 'styled-components'
 
 
 const LogoWrapper = styled.div`
-font-size: 50px;
+font-size: 40px;
 font-weight: 900;
-padding-top: 70px;
-padding-left: 50px;
 background: #fff;
 
 a {
 text-decoration: none;
 color: gray;
-text-shadow: 1px 1px 1px black;
+// text-shadow: 1px 1px 1px black;
 }
 
 @media only screen and (max-width: 1024px) {
