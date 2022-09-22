@@ -73,7 +73,7 @@ const Sidebar = () => {
     </Logo>
 
     <NavLinks>
-    <Link href="/#about">About</Link>
+    <Link href="/about">About</Link>
     <Link href="/#contact">Contact</Link>
    </NavLinks>
     </SidebarWrapper>

@@ -32,8 +32,7 @@ a {
    return (
 <NavSection>
  <NavLinks>
-    {/* <Link href="/#services">Services</Link> */}
-    <Link href="/#about">About</Link>
+    <Link href="/about">About</Link>
     <Link href="/#contact">Contact</Link>
    </NavLinks>
    

@@ -8,35 +8,6 @@ import styled from 'styled-components'
 
 
 // STYLES
-const Wrapper = styled.div`
-position: absolute;
-top: 0;
-z-index: 12;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-areas:
-'a b b';
-
-@media only screen and (max-width: 1024px) {
-  margin-top: 90px;
-  grid-template-columns: 1fr;
-grid-template-areas:
-'b'
-'b'
-'a';
-}
-`
-
-const RightSection = styled.div`
-grid-area: b;
-height: 100vh;
-overflow-x: hidden;
-background: teal;
-
-@media only screen and (max-width: 1024px) {
-  height: auto;
-}
-`
 
 export const Content = styled.div`
 cursor: pointer;
@@ -126,10 +97,6 @@ const Home = ({ posts }) => {
         <meta name="p:domain_verify" content="0eb994c4a2db7b6db7409469d390cc92"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <Wrapper>
-       <LeftSection />
-
-  <RightSection>
               <Banner />
                           {posts &&
                           posts.map((post, index) => (   
@@ -149,8 +116,6 @@ const Home = ({ posts }) => {
                             </Link>
                               </span>   
                             ))}
-       </RightSection>
-    </Wrapper>
     </>
   )
 }
