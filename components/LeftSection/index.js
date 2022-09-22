@@ -5,12 +5,12 @@ import styled from 'styled-components'
 
 // STYLES
 const Wrapper = styled.div`
-// background: teal;
 height: 100vh;
+overflow: hidden;
 grid-area: a;
 overflow-x: auto;
 border-right: solid 2px #000;
-position: sticky;
+// width: 80%;
 
 @media only screen and (max-width: 1024px) {
   height: auto;

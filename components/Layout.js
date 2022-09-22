@@ -13,9 +13,9 @@ position: absolute;
 top: 0;
 z-index: 12;
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(4, 1fr);
 grid-template-areas:
-'a b b';
+'a b b b';
 
 @media only screen and (max-width: 1024px) {
   margin-top: 90px;
@@ -30,6 +30,7 @@ grid-template-areas:
 const RightSection = styled.div`
 grid-area: b;
 height: 100vh;
+width: 100%;
 overflow-x: hidden;
 background: teal;
 
