@@ -1,5 +1,4 @@
 import Header from './Header'
-// import AboutContent from './AboutContent'
 import SubscribeSection from "./SubscribeSection"
 import styled from 'styled-components'
 
@@ -23,7 +22,6 @@ const LeftSection = () => {
      <Wrapper>
             <Header />
             <SubscribeSection />
-            {/* <AboutContent /> */}
        </Wrapper>
     </>
   )

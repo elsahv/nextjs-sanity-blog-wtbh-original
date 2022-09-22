@@ -2,13 +2,11 @@
 import Link from "next/link"
 import Head from 'next/head'
 import { sanityClient, urlFor } from "../client"
-import LeftSection from "../components/LeftSection"
 import Banner from "../components/Banner"
 import styled from 'styled-components'
 
 
 // STYLES
-
 export const Content = styled.div`
 cursor: pointer;
 display: flex;
