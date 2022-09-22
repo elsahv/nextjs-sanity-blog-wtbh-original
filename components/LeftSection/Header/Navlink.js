@@ -5,7 +5,6 @@ export const NavSection = styled.nav`
 cursor: pointer;
 display: flex;
 flex-direction: column;
-// padding-left: 50px;
 padding-top: 10px;
 `
 
@@ -16,13 +15,13 @@ justify-content: flex-start;
 flex-direction: column;
 a {
     color: gray;
-   //  text-shadow: 1px 1px 1px black;
     text-decoration: none;
     padding-left: 5px;
 }
  a:hover {
     color: aquamarine;
     transition: 1s;
+    text-shadow: 1px 1px 1px black;
  }
     @media only screen and (max-width: 1024px) {
     display: none;

@@ -7,7 +7,7 @@ import styled from 'styled-components'
  const MailchimpWrapper = styled.div`
  background: gray;
 margin-top: 405px;
-padding-left: 55px; 
+padding-left: 40px; 
 grid-area: right;
 border-bottom: solid 2px black;
 border-top: solid 2px black;
