@@ -11,32 +11,37 @@ position: relative;
 display: flex;
 justify-content: center;
 margin-top: 20px;
-
 .img {
    width: 1380px;
    border: solid 2px black;
 }
 `
 export const ImagesWrapper = styled.div`
+.postImage {
+  width: 1200px;
+  border: solid 2px black;
+}
 `
 
   
 export const Title = styled.h2`
-font-size: 30px;
-text-align: center;
-padding: 20px;
+font-size: 35px;
+text-align: left;
+padding: 60px 30px 10px; 
 text-transform: capitalize;
+text-shadow: 1px 1px 1px black;
+color: #fff;
 @media only screen and (max-width: 1024px) {
 }
 `
 
 export const BodyContent = styled.div`
-// background: teal;
 text-align: left;
  font-size: 17px;
  line-height: 2em;
- margin: 30px 350px; 
-
+ margin-top: 80px; 
+ background: coral;
+ padding: 30px 80px; 
  @media only screen and (max-width: 1024px) {
    margin: 20px 100px;
 }
@@ -55,7 +60,7 @@ const PostComponents = {
         <img
           alt={value.alt || ' '}
           src={urlFor(value)}
-          className="images"
+          className="postImage"
           />
           </ImagesWrapper>
       )
@@ -71,6 +76,8 @@ const Post = ({
 }) => {
   return (
     <>
+<Title>{title}</Title>
+
        <MainImgWrapper>
         <img
                       src={urlFor(mainImage)} 
@@ -79,10 +86,9 @@ const Post = ({
                       layout="responsive"
                       />
 </MainImgWrapper>
-
-<Title>{title}</Title>
-
       <BodyContent>
+{/* <Title>{title}</Title> */}
+
       <PortableText value={body} components={PostComponents} />
       </BodyContent>
     </>
