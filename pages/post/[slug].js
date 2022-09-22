@@ -10,10 +10,11 @@ export const MainImgWrapper = styled.div`
 position: relative;
 display: flex;
 justify-content: center;
-margin-top: 100px;
+margin-top: 30px;
+
 .img {
-   width: 1400px
-  
+   width: 1400px;
+   border: solid 2px black;
 }
 `
 export const ImagesWrapper = styled.div`
@@ -70,7 +71,6 @@ const Post = ({
 }) => {
   return (
     <>
-     <Title>{title}</Title>
        <MainImgWrapper>
         <img
                       src={urlFor(mainImage)} 
@@ -79,6 +79,9 @@ const Post = ({
                       layout="responsive"
                       />
 </MainImgWrapper>
+
+<Title>{title}</Title>
+
       <BodyContent>
       <PortableText value={body} components={PostComponents} />
       </BodyContent>
