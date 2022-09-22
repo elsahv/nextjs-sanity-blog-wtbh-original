@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 
 export const Wrapper = styled.div`
-padding-top: 100px;
+padding-top: 80px;
 padding-left: 50px;
-  font-size: 30px;
-  text-shadow: 1px 1px 1px #000;
+  font-size: 35px;
+  text-shadow: 1px 1px 1px black;
   color: #fff;
 
   @media only screen and (max-width: 834px) {

@@ -14,7 +14,7 @@ display: flex;
 align-items: flex-start;
 flex-direction: column;
 padding-left: 45px;
-padding-top: 15px;
+padding-top: 5px;
 padding-bottom: 150px;
 
 @media only screen and (max-width: 531px) {
@@ -24,14 +24,16 @@ padding-left: 15px;
  
 export const PostTitle = styled.div`
 text-transform: capitalize;
-font-size: 25px;
+font-size: 35px;
 display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-padding: 20px 10px;
-margin-top: 100px;
-color: #fff ;
+padding-bottom: 10px;
+padding-left: 50px;
+margin-top: 50px;
+color: coral;
+// text-shadow: 1px 1px 1px black;
 
 @media only screen and (max-width: 1024px) {
  font-size: 18px;
