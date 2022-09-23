@@ -35,7 +35,7 @@ a {
  <NavLinks>
     <Link href="/">Home</Link>
     <Link href="/about">About</Link>
-    <Link href="/#contact">Contact</Link>
+    <Link href="/about/#contact">Contact</Link>
    </NavLinks>
    
     </NavSection>
