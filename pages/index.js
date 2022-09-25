@@ -7,7 +7,6 @@ import styled from 'styled-components'
 
 
 // STYLES
-
 export const Content = styled.div`
 cursor: pointer;
 display: flex;
@@ -63,13 +62,11 @@ export const ImgWrapper = styled.div`
 @media only screen and (max-width: 834px) {
   .img {
     width: 700px;
-  height: 400px;
   }
 
   @media only screen and (max-width: 600px) {
     .img {
       width: 500px;
-    height: 300px;
     }
 
     @media only screen and (max-width: 531px) {
