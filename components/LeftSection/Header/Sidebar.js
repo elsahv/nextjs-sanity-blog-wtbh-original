@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 
 
-
 export const SidebarWrapper = styled.div`
 text-align: center;
 padding: 8px 0 15px 0;
@@ -11,14 +10,15 @@ display: none;
 background: #fff;
 border: solid 2px black;
 width: 100%;
-// height: 150px;
-
 
  @media only screen and (max-width: 1024px) {
-position: fixed;
+position: relative;
 top: 0;
 z-index: 200;
 display: block;
+ }
+
+ @media only screen and (max-width: 1024px) {
  }
 `
  
@@ -29,17 +29,18 @@ a {
    color: gray;
 text-shadow: 1px 1px 1px black;
    text-decoration: none;
-   font-size: 30px;
+   font-size: 35px;
 }
 @media only screen and (max-width: 531px) {
+   padding: 10px;
  a {
-   font-size: 25px;
+   font-size: 24px;
  }
 }
  `
 
 export const NavLinks = styled.div`
-font-size: 20px;
+font-size: 30px;
 a {
    color: gray;
 text-shadow: 1px 1px 1px black;
@@ -48,13 +49,12 @@ text-shadow: 1px 1px 1px black;
 }
 
 @media only screen and (max-width: 531px) {
-// font-size: 15px;
 display: flex;
-flex-direction: column;
+justify-content: center;
+// flex-direction: column;
+font-size: 20px;
 }
  `
-
-
 
 
 
@@ -71,7 +71,7 @@ const Sidebar = () => {
 
     <NavLinks>
     <Link href="/about">About</Link>
-    <Link href="/#contact">Contact</Link>
+    <Link href="/about/#contact">Contact</Link>
    </NavLinks>
     </SidebarWrapper>
     </>
