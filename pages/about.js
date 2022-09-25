@@ -45,6 +45,12 @@ grid-area: add;
 background: orange;
 height: 400px;
 width: 100%;
+padding: 30px;
+
+
+@media only screen and (max-width: 531px) {
+  padding: 40px 60px;
+}
 `
 
 
@@ -193,7 +199,7 @@ const about = () => {
     <Wrapper>
         <Grid>
     
-         <Add id="square">About WTBH</Add>
+         <Add id="square">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni placeat cumque laborum consectetur, tenetur ratione, saepe eligendi quia mollitia soluta sequi, unde aperiam totam nulla aut similique error dolor consequatur.</Add>
            <Sq1 id="square">
            <ContentTitle>
              About 

@@ -8,7 +8,7 @@ text-align: center;
 padding: 8px 0 15px 0;
 display: none;
 background: #fff;
-border: solid 2px black;
+border-bottom: solid 2px black;
 width: 100%;
 
  @media only screen and (max-width: 1024px) {
@@ -16,9 +16,6 @@ position: relative;
 top: 0;
 z-index: 200;
 display: block;
- }
-
- @media only screen and (max-width: 1024px) {
  }
 `
  
