@@ -23,6 +23,7 @@ grid-template-areas:
 grid-template-areas:
 'b'
 'b'
+'b'
 'a';
 }
 `

@@ -6,30 +6,27 @@ import styled from 'styled-components'
 
 export const SidebarWrapper = styled.div`
 text-align: center;
-padding: 10px;
+padding: 8px 0 15px 0;
 display: none;
+background: #fff;
+border: solid 2px black;
+width: 100%;
+// height: 150px;
 
 
  @media only screen and (max-width: 1024px) {
-position: absolute;
+position: fixed;
 top: 0;
-z-index: 1;
+z-index: 200;
 display: block;
-background: coral;
-border: solid 2px black;
-width: 100%;
  }
-
-@media only screen and (max-width: 500px) {
-   display: block;
-}
 `
  
 export const Logo = styled.div`
 font-weight: bold;
-padding: 2px;
+padding-top: 15px;
 a {
-   color: #fff;
+   color: gray;
 text-shadow: 1px 1px 1px black;
    text-decoration: none;
    font-size: 30px;
@@ -44,7 +41,7 @@ text-shadow: 1px 1px 1px black;
 export const NavLinks = styled.div`
 font-size: 20px;
 a {
-   color: #fff;
+   color: gray;
 text-shadow: 1px 1px 1px black;
    text-decoration: none;
    margin: 0 15px;   
