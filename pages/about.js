@@ -8,6 +8,10 @@ const Wrapper = styled.div`
 display: flex;
 justify-content: center;
 margin: 60px 105px;
+
+@media only screen and (max-width: 531px) {
+  margin: 0;
+}
 `
 
 export const Grid = styled.div`
@@ -19,8 +23,6 @@ export const Grid = styled.div`
   'bl bl'
   'br br';
   grid-gap: 1em;
-  // border: solid 2px black;
-
   #square {
     border: solid 2px black;
   }
@@ -28,8 +30,11 @@ export const Grid = styled.div`
 @media only screen and (max-width: 600px) {
   grid-template-columns: 1fr;
   grid-template-areas: 
-  'img' 
-  'content';
+  'add'
+  'tl'
+  'tr'
+  'bl'
+  'br';
 }
 `
 
@@ -37,6 +42,9 @@ export const Grid = styled.div`
 //////////* ADD*/////////////
 export const Add = styled.div`
 grid-area: add;
+background: orange;
+height: 400px;
+width: 100%;
 `
 
 
@@ -49,15 +57,23 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 padding: 0 40px 100px;
+
+@media only screen and (max-width: 531px) {
+  padding: auto;
+}
 `
 
 export const ContentTitle = styled.h4`
-font-size: 25px;  
+font-size: 35px;  
 padding-bottom: 15px;
+
+@media only screen and (max-width: 531px) {
+padding-top: 20px;
+}
 `
 
 export const ContentBody = styled.div`
-font-size: 20px;
+font-size: 22px;
 line-height: 1.5em;
  
 a {
@@ -67,6 +83,7 @@ a {
 
 @media only screen and (max-width: 531px) {
   font-size: 18px;
+  padding: 0 50px;
 }
 `
 
@@ -96,15 +113,24 @@ border: solid 2px black;
 
 //////////* SQUARE 3 */////////////
 export const Sq3 = styled.div`
+margin-top: 150px;
 grid-area: bl;
 background: aquamarine;
-padding: 20px;
+padding: 65px;
 span {
- font-size: 18px;
+  font-size: 22px;
 }
 a {
   color: #000;
   padding: 3px;
+}
+
+@media only screen and (max-width: 531px) {
+ padding: 30px 70px;
+//  margin: auto;
+ span {
+  font-size: 18px;
+ }
 }
 `
 
@@ -114,7 +140,7 @@ a {
 export const Sq4 = styled.div`
 grid-area: br;
 background: orange;
-
+margin-bottom: 300px;
 `
 
 
@@ -161,13 +187,13 @@ font-size: 18px;
 
 
 //END STYLES
-const test = () => {
+const about = () => {
   return (
     <>
     <Wrapper>
         <Grid>
-
-         <Add>additional about</Add>
+    
+         <Add id="square">About WTBH</Add>
            <Sq1 id="square">
            <ContentTitle>
              About 
@@ -199,7 +225,7 @@ const test = () => {
            </Sq3>
 
            <Sq4 id="square">
-           <PortfolioCTA id="contact">
+           <PortfolioCTA>
       <Body>
           <h4>Need a website? Or perhaps you have questions about web development or design?</h4>
           <p>For business inquiries... you can reach me at
@@ -218,4 +244,4 @@ const test = () => {
   )
 }
 
-export default test
+export default about
