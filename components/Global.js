@@ -6,12 +6,11 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
 
   }
 
   html {
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
     line-height: 1.5;
   }
   `

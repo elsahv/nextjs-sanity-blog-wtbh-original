@@ -196,10 +196,10 @@ font-size: 18px;
 const about = () => {
   return (
     <>
-    <Wrapper>
+    <Wrapper id="about">
         <Grid>
     
-         <Add id="square">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni placeat cumque laborum consectetur, tenetur ratione, saepe eligendi quia mollitia soluta sequi, unde aperiam totam nulla aut similique error dolor consequatur.</Add>
+         <Add id="square">Writing to Better Health is an illustrative site inspired by mindmapping.       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni placeat cumque laborum consectetur, tenetur ratione, saepe eligendi quia mollitia soluta sequi, unde aperiam totam nulla aut similique error dolor consequatur.</Add>
            <Sq1 id="square">
            <ContentTitle>
              About 

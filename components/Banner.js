@@ -9,7 +9,7 @@ padding-left: 50px;
   text-shadow: 1px 1px 1px gray;
   color: aquamarine;
 
-  @media only screen and (max-width: 834px) {
+  @media only screen and (max-width: 1024px) {
     font-size: 27px;
     padding: auto;
   }
@@ -20,7 +20,7 @@ padding-left: 50px;
 `
 const Banner = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
     - An illustrative website about food and mental wellness...
       </Wrapper>
   )

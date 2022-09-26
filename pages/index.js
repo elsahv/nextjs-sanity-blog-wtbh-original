@@ -3,6 +3,7 @@ import Link from "next/link"
 import Head from 'next/head'
 import { sanityClient, urlFor } from "../client"
 import Banner from "../components/Banner"
+import AboutSection from "../components/AboutSection"
 import styled from 'styled-components'
 
 
@@ -113,6 +114,10 @@ const Home = ({ posts }) => {
                             </Link>
                               </span>   
                             ))}
+
+                            <AboutSection />
+                            
+                            
     </>
   )
 }

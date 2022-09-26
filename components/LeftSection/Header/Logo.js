@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styled from 'styled-components'
 
 
@@ -9,12 +8,10 @@ font-size: 45px;
 font-weight: 900;
 background: #fff;
 line-height: 1;
-a {
 text-decoration: none;
 color: gray;
 text-shadow: 1px 1px 1px black;
-}
-
+ 
 @media only screen and (max-width: 1024px) {
   display: none;
 }
@@ -30,9 +27,7 @@ text-shadow: 1px 1px 1px black;
  const Logo = () => {
    return (
     <LogoWrapper> 
-    <Link href="/">
       Writing to Better Health
-      </Link>
     </LogoWrapper> 
    )
  }
