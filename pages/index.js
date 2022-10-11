@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Head from "next/head";
 import { sanityClient, urlFor } from "../client";
-import Banner from "../components/Banner";
 import styled from "styled-components";
 
 // STYLES
@@ -21,6 +20,7 @@ export const Grid = styled.div`
 
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
   }
 
   @media only screen and (max-width: 531px) {
@@ -35,7 +35,7 @@ export const ImgWrapper = styled.div`
     height: 450px;
     border: solid 2px black;
     &:hover {
-      opacity: 0.6;
+      opacity: 0.7;
       transition: 2s;
     }
   }
@@ -60,7 +60,6 @@ const Home = ({ posts }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Banner />
       <Grid>
         {posts &&
           posts.map((post, index) => (

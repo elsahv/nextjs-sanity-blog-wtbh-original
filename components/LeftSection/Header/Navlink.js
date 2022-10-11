@@ -19,9 +19,8 @@ export const NavLinks = styled.div`
     padding-left: 5px;
   }
   a:hover {
-    color: aquamarine;
+    color: coral;
     transition: 1s;
-    text-shadow: 1px 1px 1px black;
   }
 `;
 
