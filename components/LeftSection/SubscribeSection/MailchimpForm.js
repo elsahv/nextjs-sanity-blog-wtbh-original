@@ -1,41 +1,40 @@
-import React, { useState } from 'react'
-import axios from 'axios'
-import styled from 'styled-components'
-
-
+import React, { useState } from "react";
+import axios from "axios";
+import styled from "styled-components";
 
 export const SubscribeContainer = styled.form`
-width: 100%;
-padding: 10px 10px 10px 20px;
-`
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+`;
 
 export const SubFormContainer = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 
   @media (max-width: 600px) {
     width: 100%;
     display: block;
   }
- `
+`;
 
 export const Input = styled.input`
-padding: 5px 10px 5px 10px;
-border-radius: 4px;
-border: 1px solid #000;
-font-size: 16px;
-background: #fff;
+  padding: 8px 50px 8px 10px;
+  border: 1px solid #000;
+  font-size: 16px;
+  background: #fff;
 
-@media (max-width: 600px) {
-width: 220px;
-}
-`
+  @media (max-width: 1024px) {
+    padding-right: 10px;
+    width: 200px;
+  }
+`;
 
 export const Button = styled.button`
-  padding: 5px 10px 5px 10px;
-  margin-left: 10px; 
+  padding: 5px 10px;
+  margin-top: 20px; 
   border: solid 2px black;
-  border-radius: 4px;
   font-weight: bold;
   background: teal;
   color: aquamarine;
@@ -54,75 +53,65 @@ export const Button = styled.button`
   margin-left: 0;
 }
 } 
-`
+`;
 
 export const SuccessState = styled.p`
   color: aquamarine;
   text-shadow: 1px 1px 1px black;
   padding-top: 20px;
-`
+`;
 
 export const ErrorState = styled.p`
   color: #b00020;
   padding-top: 22px;
-`
-
-
-
- 
-
+`;
 
 function Subscribe() {
-  const [email, setEmail] = useState('')
-  const [state, setState] = useState('idle')
-  const [errorMsg, setErrorMsg] = useState(null)
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState("idle");
+  const [errorMsg, setErrorMsg] = useState(null);
 
   const subscribe = async (e) => {
-    e.preventDefault()
-    setState('Loading')
-    try { 
-      const response = await axios.post('/api/subscribeApi', { email })
-      setState('Success')
-      setEmail('')
+    e.preventDefault();
+    setState("Loading");
+    try {
+      const response = await axios.post("/api/subscribeApi", { email });
+      setState("Success");
+      setEmail("");
     } catch (e) {
-      setErrorMsg(e.response.data.error)
-      setState('Error')
+      setErrorMsg(e.response.data.error);
+      setState("Error");
     }
-  }
+  };
 
   return (
-     <>
+    <>
       <SubscribeContainer onSubmit={subscribe}>
         <SubFormContainer>
+          <Input
+            required
+            name="email"
+            type="email"
+            placeholder="email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-              <Input
-                required
-                name="email"
-                type="email"
-                placeholder="email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-
-            <Button
-              disabled={state === 'Loading'}
-              type="submit"
-              onClick={subscribe}
-            >
-              Subscribe
-            </Button>
-
+          <Button
+            disabled={state === "Loading"}
+            type="submit"
+            onClick={subscribe}
+          >
+            Subscribe
+          </Button>
         </SubFormContainer>
-            {state === 'Error' && (
-              <ErrorState>{errorMsg}</ErrorState>
-            )}
-            {state === 'Success' && (
-              <SuccessState>Awesome, you are now subscribed!</SuccessState>
-            )}
-
-    </SubscribeContainer>
-    </>  
-  )
+        {state === "Error" && <ErrorState>{errorMsg}</ErrorState>}
+        {state === "Success" && (
+          <SuccessState>Awesome, you are now subscribed!</SuccessState>
+        )}
+      </SubscribeContainer>
+    </>
+  );
 }
 
-export default Subscribe
+export default Subscribe;

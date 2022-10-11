@@ -1,105 +1,54 @@
-import MailchimpForm from './MailchimpForm'
-import Link from 'next/link'
-import styled from 'styled-components'
+import MailchimpForm from "./MailchimpForm";
+import Link from "next/link";
+import styled from "styled-components";
 
+const MailchimpWrapper = styled.div`
+  grid-area: right;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "a"
+    "b";
+`;
 
-
- const MailchimpWrapper = styled.div`
- background: gray;
-margin-top: 405px;
-padding-left: 20px; 
-grid-area: right;
-border-bottom: solid 2px black;
-border-top: solid 2px black;
-display: grid;
-grid-template-rows: 1fr 1fr;
-grid-template-areas:
-'a'
-'b';
- 
-@media only screen and (max-width: 1024px) {
-  padding: 0;
-  margin: 0;
-}
-`
-
- const CTA = styled.div`
-padding: 22px;  
-grid-area: a;
-color: #fff;
-display: flex;
-justify-content: flex-end;
-flex-direction: column;
-
-@media only screen and (max-width: 600px) {
-padding-top: 45px;
-}
-`
-
- const ContentTitle = styled.h4`
-font-size: 30px;
-text-shadow: 1px 1px 1px black;
-color: #fff;
-
-
-@media only screen and (max-width: 768px) {
-    margin: 0;
-}
-
-@media only screen and (max-width: 531px) {
-    font-size: 20px;
-    text-align: center;
-    margin: 5px;
-}
-`
-
-
-
- const ContentParagraph = styled.div`
-font-size: 20px;
-padding-top: 10px;
-color: #fff;
-text-shadow: 1px 1px 1px #000;
-a {
-  color: #fff;
-  padding: 0 6px;
-  
-}
-
-@media only screen and (max-width: 834px) {
-   font-size: 18px;
-}
-
-@media only screen and (max-width: 531px) {
+const ContentParagraph = styled.p`
   font-size: 18px;
-}
-`
-
-
- const MailchimpContainer = styled.div`
-
-@media only screen and (max-width: 531px) {
+  padding: 20px 20px 5px;
+  color: #000;
+  opacity: 0.8;
+  a {
+    color: #000;
+    padding: 0 6px;
   }
-`
 
+  @media only screen and (max-width: 1024px) {
+    font-size: 15px;
+    padding-top: 50px;
+  }
+
+  @media only screen and (max-width: 531px) {
+    font-size: 18px;
+  }
+`;
+
+const MailchimpContainer = styled.div`
+  // background: green;
+  @media only screen and (max-width: 531px) {
+  }
+`;
 
 const SubscribeCTA = () => {
-    return (
-      <MailchimpWrapper>
-      <CTA>
-        <ContentTitle>
-       Weekly Newsletter
-          </ContentTitle>
-  
-        <ContentParagraph>
-      Regarding food, plants, and other writings...  Subscribe for post updates! 
-          </ContentParagraph>
-        </CTA>
-          <MailchimpContainer>
-            <MailchimpForm />
-          </MailchimpContainer>
-       </MailchimpWrapper>
-    )
-  }
-  
-  export default SubscribeCTA
+  return (
+    <MailchimpWrapper>
+      <ContentParagraph>
+        Regarding food, plants, and other writings... Subscribe for post
+        updates!
+      </ContentParagraph>
+      <MailchimpContainer>
+        <MailchimpForm />
+      </MailchimpContainer>
+    </MailchimpWrapper>
+  );
+};
+
+export default SubscribeCTA;
