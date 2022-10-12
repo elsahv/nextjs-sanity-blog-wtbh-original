@@ -32,7 +32,7 @@ export const ImgWrapper = styled.div`
   cursor: pointer;
   .img {
     width: 100%;
-    height: 450px;
+    height: 530px;
     border: solid 2px black;
     &:hover {
       opacity: 0.7;
