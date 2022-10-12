@@ -42,7 +42,7 @@ export const ImgWrapper = styled.div`
 
   @media only screen and (max-width: 1024px) {
     .img {
-      height: 350px;
+      height: 430px;
     }
   }
 `;
