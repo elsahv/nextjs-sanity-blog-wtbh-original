@@ -84,6 +84,7 @@ export const Body = styled.div`
   }
   p {
     font-size: 22px;
+    padding-top: 15px;
   }
 
   @media only screen and (max-width: 1024px) {
@@ -116,9 +117,8 @@ const ContactSection = () => {
           <PortfolioCTA>
             <Body>
               <h4>
-                Need a website?
-                {/* Or perhaps you have questions about web
-                development or design? */}
+                I build websites for a living, with an interest in helping small
+                businesses and creatives.
               </h4>
               <p>
                 For business inquiries... you can reach me at

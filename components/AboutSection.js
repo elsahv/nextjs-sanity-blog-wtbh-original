@@ -114,21 +114,20 @@ const about = () => {
     <>
       <Wrapper id="about">
         <Grid>
-          <Add id="square">
+          {/* <Add id="square">
             Writing to Better Health is an illustrative site inspired by
             mindmapping. Lorem ipsum, dolor sit amet consectetur adipisicing
             elit. Magni placeat cumque laborum consectetur, tenetur ratione,
             saepe eligendi quia mollitia soluta sequi, unde aperiam totam nulla
             aut similique error dolor consequatur.
-          </Add>
+          </Add> */}
           <Sq1 id="square">
             <ContentTitle>About</ContentTitle>
             <ContentBody>
-              Welcome to Writing to Better Health! Im Elsa, a freelance web
-              developer and lover of nutrition and food in general. Ive
-              originally started this website to relearn and recall some of the
-              stuff Ive learned from my bachelors education in Nutrition and
-              Food Science.
+              Hi there, I’m Elsa. I’ve started this blog to relearn some
+              nutrition facts, and build up my skills with web design and
+              development. I love food and food illustrations, which you will
+              see a lot with this site!
             </ContentBody>
           </Sq1>
 

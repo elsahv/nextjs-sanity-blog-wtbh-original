@@ -41,8 +41,15 @@ const SubscribeCTA = () => {
   return (
     <MailchimpWrapper>
       <ContentParagraph>
-        Regarding food, plants, and other writings... Subscribe for post
-        updates!
+        A weekly newsletter regarding: food, plants, and other writings...
+        Subscribe for post updates! You can also read it for free
+        <a
+          target="_blank"
+          href="https://elsahovey.com/newsletter"
+          rel="noreferrer"
+        >
+          here
+        </a>
       </ContentParagraph>
       <MailchimpContainer>
         <MailchimpForm />

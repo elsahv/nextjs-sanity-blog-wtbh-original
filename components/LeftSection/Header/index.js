@@ -8,15 +8,15 @@ const Wrapper = styled.div`
   margin-top: 300px;
 
   @media only screen and (max-width: 1024px) {
-    margin-top: 700px;
+    margin-top: 650px;
   }
 
   @media only screen and (max-width: 834px) {
-    margin-top: 500px;
+    margin-top: 450px;
   }
 
   @media only screen and (max-width: 768px) {
-    margin-top: 300px;
+    margin-top: 250px;
   }
 `;
 

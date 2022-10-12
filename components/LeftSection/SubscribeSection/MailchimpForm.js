@@ -92,7 +92,7 @@ function Subscribe() {
             required
             name="email"
             type="email"
-            placeholder="email address"
+            placeholder="enter email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />

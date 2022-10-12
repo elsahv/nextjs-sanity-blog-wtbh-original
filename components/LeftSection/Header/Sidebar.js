@@ -27,6 +27,10 @@ export const Logo = styled.div`
     text-decoration: none;
     font-size: 35px;
   }
+
+  @media only screen and (max-width: 531px) {
+    padding-top: 0px;
+  }
   @media only screen and (max-width: 531px) {
     padding: 10px;
     a {
@@ -36,10 +40,8 @@ export const Logo = styled.div`
 `;
 
 export const NavLinks = styled.div`
-  font-size: 20px;
   a {
     color: gray;
-    // text-shadow: 1px 1px 1px black;
     text-decoration: none;
     margin: 0 15px;
   }
@@ -47,8 +49,7 @@ export const NavLinks = styled.div`
   @media only screen and (max-width: 531px) {
     display: flex;
     justify-content: center;
-    // flex-direction: column;
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 
@@ -59,11 +60,12 @@ const Sidebar = () => {
         <Logo>
           <Link href="/">Writing to Better Health</Link>
         </Logo>
-        <Banner />
+        {/* <Banner /> */}
         <NavLinks>
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
+          <Link href="/#subscribe">Subscribe</Link>
         </NavLinks>
       </SidebarWrapper>
     </>

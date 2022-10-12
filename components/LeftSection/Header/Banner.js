@@ -10,10 +10,12 @@ export const Wrapper = styled.div`
   @media only screen and (max-width: 600px) {
     font-size: 20px;
     padding-left: 30px;
+    padding-top: 30px;
+    color: #000;
   }
 
   @media only screen and (max-width: 531px) {
-    font-size: 21px;
+    font-size: 17px;
   }
 `;
 const Banner = () => {

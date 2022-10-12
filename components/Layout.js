@@ -1,5 +1,5 @@
 import GlobalStyles from "./Global.js";
-// import Footer from './Footer'
+import Footer from "./Footer";
 import Sidebar from "./LeftSection/Header/Sidebar.js";
 import LeftSection from "./LeftSection/index.js";
 import styled from "styled-components";
@@ -43,9 +43,9 @@ export default function Layout({ children }) {
 
         <RightSection>
           <main>{children}</main>
+          <Footer />
         </RightSection>
       </Wrapper>
-      {/* <Footer /> */}
     </>
   );
 }
