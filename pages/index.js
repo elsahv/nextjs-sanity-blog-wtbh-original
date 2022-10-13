@@ -1,30 +1,68 @@
 /* eslint-disable @next/next/no-img-element */
+
 import Link from "next/link";
 import Head from "next/head";
 import { sanityClient, urlFor } from "../client";
+import AboutSection from "../components/AboutSection";
+import SubscribeSection from "../components/SubscribeSection";
+import Banner from "../components/Banner";
+
 import styled from "styled-components";
 
 // STYLES
-
-export const Grid = styled.div`
+export const IndexGrid = styled.div`
   // background: orange;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "ls rs rs rs";
+  grid-gap: 2em;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ls"
+      "rs";
+  }
+`;
+
+export const Aside = styled.div`
+  grid-area: ls;
+  background: teal;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+`;
+
+export const PostTitle = styled.h2`
+  padding: 10px 5px;
+  text-transform: capitalize;
+`;
+
+export const PostsGrid = styled.div`
+  grid-area: rs;
+  background: orange;
   padding: 50px 105px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
+  border-left: solid 2px #000;
+  border-bottom: solid 2px #000;
 
   @media only screen and (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
     padding: 20px 40px;
   }
 
+  @media only screen and (max-width: 834px) {
+    grid-template-columns: 1fr;
+    padding: 20px 60px;
+  }
+
   @media only screen and (max-width: 600px) {
-    grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+    padding: 40px 70px;
   }
 
   @media only screen and (max-width: 531px) {
-    grid-template-columns: 1fr;
+    padding: 20px;
   }
 `;
 
@@ -32,7 +70,7 @@ export const ImgWrapper = styled.div`
   cursor: pointer;
   .img {
     width: 100%;
-    height: 490px;
+    height: 400px;
     border: solid 2px black;
     &:hover {
       opacity: 0.7;
@@ -60,22 +98,32 @@ const Home = ({ posts }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Grid>
-        {posts &&
-          posts.map((post, index) => (
-            <span key={index}>
-              <Link href={`post/${post.slug.current}`}>
-                <ImgWrapper>
-                  <img
-                    src={urlFor(post.image)}
-                    alt="main pic"
-                    className="img"
-                  />
-                </ImgWrapper>
-              </Link>
-            </span>
-          ))}
-      </Grid>
+
+      <IndexGrid>
+        <Aside>
+          <Banner />
+          <SubscribeSection />
+        </Aside>
+
+        <PostsGrid>
+          {posts &&
+            posts.map((post, index) => (
+              <span key={index}>
+                <PostTitle>{post.title}</PostTitle>
+                <Link href={`post/${post.slug.current}`}>
+                  <ImgWrapper>
+                    <img
+                      src={urlFor(post.image)}
+                      alt="main pic"
+                      className="img"
+                    />
+                  </ImgWrapper>
+                </Link>
+              </span>
+            ))}
+        </PostsGrid>
+      </IndexGrid>
+      <AboutSection />
     </>
   );
 };

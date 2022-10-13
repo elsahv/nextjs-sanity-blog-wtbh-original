@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styled from "styled-components";
-import Banner from "./Banner";
 
 export const SidebarWrapper = styled.div`
   text-align: center;
@@ -60,12 +59,10 @@ const Sidebar = () => {
         <Logo>
           <Link href="/">Writing to Better Health</Link>
         </Logo>
-        {/* <Banner /> */}
         <NavLinks>
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
-          <Link href="/#subscribe">Subscribe</Link>
         </NavLinks>
       </SidebarWrapper>
     </>

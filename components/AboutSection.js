@@ -6,47 +6,36 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin: 60px 105px;
+  margin: 60px 0px;
+  padding: 50px 150px 60px;
+  background: teal;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+
+  @media only screen and (max-width: 600px) {
+    margin: 40px 0;
+    padding: 50px;
+  }
 
   @media only screen and (max-width: 531px) {
-    margin: 0;
+    padding: 0px;
   }
 `;
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "add add"
-    "tl tr"
-    "bl bl"
-    "br br";
+  grid-template-areas: "tl tr";
   grid-gap: 1em;
   #square {
     border: solid 2px black;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 834px) {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "add"
       "tl"
-      "tr"
-      "bl"
-      "br";
-  }
-`;
-
-//////////* ADD*/////////////
-export const Add = styled.div`
-  grid-area: add;
-  background: orange;
-  height: 400px;
-  width: 100%;
-  padding: 30px;
-
-  @media only screen and (max-width: 531px) {
-    padding: 40px 60px;
+      "tr";
   }
 `;
 
@@ -60,7 +49,7 @@ export const Sq1 = styled.div`
   flex-direction: column;
   padding: 0 40px 100px;
 
-  @media only screen and (max-width: 531px) {
+  @media only screen and (max-width: 1024px) {
     padding: auto;
   }
 `;
@@ -92,19 +81,23 @@ export const ContentBody = styled.div`
 //////////* SQUARE 2 */////////////
 export const Sq2 = styled.div`
   grid-area: tr;
-  // background: green;
+  display: flex;
+  justify-content: center;
 `;
 
 export const ImgWrapper = styled.div`
   width: 300px;
   grid-area: img;
-  position: relative;
   margin: 30px 80px;
   border: solid 2px black;
 
   @media only screen and (max-width: 1024px) {
     margin: auto;
     width: 260px;
+  }
+
+  @media only screen and (max-width: 531px) {
+    margin-bottom: 25px;
   }
 `;
 
@@ -114,13 +107,6 @@ const about = () => {
     <>
       <Wrapper id="about">
         <Grid>
-          {/* <Add id="square">
-            Writing to Better Health is an illustrative site inspired by
-            mindmapping. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Magni placeat cumque laborum consectetur, tenetur ratione,
-            saepe eligendi quia mollitia soluta sequi, unde aperiam totam nulla
-            aut similique error dolor consequatur.
-          </Add> */}
           <Sq1 id="square">
             <ContentTitle>About</ContentTitle>
             <ContentBody>

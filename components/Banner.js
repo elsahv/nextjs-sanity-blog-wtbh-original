@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   text-align: left;
   font-size: 20px;
-  margin: 15px 0;
-  padding-left: 4px;
-  color: gray;
+  padding: 60px 20px;
+  color: #fff;
 
   @media only screen and (max-width: 600px) {
     font-size: 20px;
@@ -16,6 +15,7 @@ export const Wrapper = styled.div`
 
   @media only screen and (max-width: 531px) {
     font-size: 17px;
+    padding: 30px 20px;
   }
 `;
 const Banner = () => {

@@ -1,6 +1,7 @@
+import React from "react";
 import ContactSection from "../components/ContactSection";
 
-const about = () => {
+const contact = () => {
   return (
     <>
       <ContactSection />
@@ -8,4 +9,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default contact;

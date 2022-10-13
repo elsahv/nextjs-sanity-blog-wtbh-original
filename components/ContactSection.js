@@ -9,8 +9,8 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 
-  @media only screen and (max-width: 834px) {
-    margin: 10px 60px;
+  @media only screen and (max-width: 531px) {
+    margin: 30px 0 0 0;
   }
 `;
 
@@ -25,6 +25,7 @@ export const ContentTitle = styled.h4`
 
 //////////* SQUARE 3 */////////////
 export const Sq3 = styled.div`
+  border: solid 2px black;
   margin-top: 150px;
   margin-right: 20px;
   grid-area: bl;
@@ -39,16 +40,21 @@ export const Sq3 = styled.div`
   }
 
   @media only screen and (max-width: 1024px) {
-    padding: 30px 70px;
+    padding: 30px 40px;
     margin: 20px 0;
     p {
       font-size: 18px;
     }
   }
+
+  @media only screen and (max-width: 531px) {
+    padding: 15px;
+  }
 `;
 
 //////////* SQUARE 4 */////////////
 export const Sq4 = styled.div`
+  border: solid 2px black;
   grid-area: br;
   background: orange;
   margin-bottom: 300px;
@@ -66,7 +72,6 @@ export const PortfolioCTA = styled.div`
 
   @media only screen and (max-width: 834px) {
     text-align: left;
-    overflow-x: hidden;
   }
 `;
 
@@ -102,7 +107,7 @@ export const Body = styled.div`
 const ContactSection = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="contact">
         <Sq3 id="square">
           <ContentTitle id="contact">Contact</ContentTitle>
           <p>

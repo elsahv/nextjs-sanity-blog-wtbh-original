@@ -3,12 +3,18 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const MailchimpWrapper = styled.div`
+  border-top: solid 2px black;
+  padding-top: 50px;
   grid-area: right;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "a"
     "b";
+
+  @media only screen and (max-width: 1024px) {
+    padding-top: 30px;
+  }
 `;
 
 const ContentParagraph = styled.p`
@@ -28,6 +34,7 @@ const ContentParagraph = styled.p`
 
   @media only screen and (max-width: 531px) {
     font-size: 18px;
+    padding-top: 10px;
   }
 `;
 

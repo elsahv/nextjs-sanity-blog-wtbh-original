@@ -4,19 +4,18 @@ import styled from "styled-components";
 export const NavSection = styled.nav`
   cursor: pointer;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding-top: 10px;
+  padding-bottom: 15px;
 `;
 
 export const NavLinks = styled.div`
   font-size: 25px;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
   a {
     color: gray;
     text-decoration: none;
-    padding-left: 5px;
+    margin: 0 15px;
   }
   a:hover {
     color: coral;
@@ -29,7 +28,7 @@ const Navlink = () => {
     <NavSection>
       <NavLinks>
         <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
+        <Link href="/#about">About</Link>
         <Link href="/contact">Contact</Link>
       </NavLinks>
     </NavSection>

@@ -8,7 +8,7 @@ const LogoWrapper = styled.div`
   text-decoration: none;
   color: gray;
   text-shadow: 1px 1px 1px black;
-  margin-bottom: 20px;
+  margin-top: 30px;
   a {
     color: gray;
     text-decoration: none;
