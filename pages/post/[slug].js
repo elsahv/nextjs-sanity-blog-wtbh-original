@@ -5,11 +5,16 @@ import styled from "styled-components";
 
 //STYLES
 
+export const PostBanner = styled.div`
+  background: teal;
+  border-bottom: solid 2px gray;
+`;
+
 export const MainImgWrapper = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 70px;
   .img {
     width: 800px;
     border: solid 2px black;
@@ -54,7 +59,7 @@ export const ImagesWrapper = styled.div`
 export const Title = styled.h2`
   font-size: 35px;
   text-align: center;
-  padding: 60px 30px 10px;
+  padding: 30px;
   text-transform: capitalize;
 `;
 
@@ -97,11 +102,14 @@ const PostComponents = {
 const Post = ({ title, image, body }) => {
   return (
     <>
-      <Title>{title}</Title>
+      <PostBanner>
+        <Title>{title}</Title>
+      </PostBanner>
 
       <MainImgWrapper>
         <img src={urlFor(image)} alt="" className="img" layout="responsive" />
       </MainImgWrapper>
+
       <BodyContent>
         <PortableText value={body} components={PostComponents} />
       </BodyContent>
