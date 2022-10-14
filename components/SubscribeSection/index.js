@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const MailchimpWrapper = styled.div`
-  border-top: solid 2px black;
+  // border-top: solid 2px black;
   padding-top: 50px;
   grid-area: right;
   display: grid;
@@ -20,7 +20,7 @@ const MailchimpWrapper = styled.div`
 const ContentParagraph = styled.p`
   font-size: 18px;
   padding: 20px 20px 5px;
-  color: #000;
+  color: aquamarine;
   opacity: 0.8;
   a {
     color: #000;

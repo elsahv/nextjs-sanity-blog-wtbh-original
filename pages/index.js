@@ -6,15 +6,23 @@ import { sanityClient, urlFor } from "../client";
 import AboutSection from "../components/AboutSection";
 import SubscribeSection from "../components/SubscribeSection";
 import Banner from "../components/Banner";
-
 import styled from "styled-components";
 
 // STYLES
+export const PostsWrapper = styled.div`
+  background: orange;
+  border-left: solid 2px black;
+
+  @media only screen and (max-width: 600px) {
+    border-left: none;
+    border-top: solid 2px black;
+  }
+`;
+
 export const IndexGrid = styled.div`
   // background: orange;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "ls rs rs rs";
+  grid-template-areas: "ls rs";
   grid-gap: 2em;
 
   @media only screen and (max-width: 600px) {
@@ -30,21 +38,40 @@ export const Aside = styled.div`
   background: teal;
   border-right: solid 2px black;
   border-bottom: solid 2px black;
+  // border-top: solid 2px black;
+  width: 400px;
+  @media only screen and (max-width: 800px) {
+    width: 200px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const PostTitle = styled.h2`
-  padding: 10px 5px;
+  padding: 10px 0px;
+  text-align: center;
   text-transform: capitalize;
+`;
+
+export const MostRecentTitle = styled.h2`
+  // padding-left: 105px;
+  padding-top: 55px;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  // border-bottom: solid 2px black;
+  // color: teal;
+  // text-shadow: 1px 1px 1px coral;
 `;
 
 export const PostsGrid = styled.div`
   grid-area: rs;
-  background: orange;
   padding: 50px 105px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
-  border-left: solid 2px #000;
   border-bottom: solid 2px #000;
 
   @media only screen and (max-width: 1024px) {
@@ -65,6 +92,8 @@ export const PostsGrid = styled.div`
     padding: 20px;
   }
 `;
+
+export const PostsSection = styled.div``;
 
 export const ImgWrapper = styled.div`
   cursor: pointer;
@@ -102,26 +131,33 @@ const Home = ({ posts }) => {
       <IndexGrid>
         <Aside>
           <Banner />
+
           <SubscribeSection />
         </Aside>
 
-        <PostsGrid>
-          {posts &&
-            posts.map((post, index) => (
-              <span key={index}>
-                <PostTitle>{post.title}</PostTitle>
-                <Link href={`post/${post.slug.current}`}>
-                  <ImgWrapper>
-                    <img
-                      src={urlFor(post.image)}
-                      alt="main pic"
-                      className="img"
-                    />
-                  </ImgWrapper>
-                </Link>
-              </span>
-            ))}
-        </PostsGrid>
+        <PostsWrapper>
+          <PostsSection>
+            <MostRecentTitle> Most Recent Posts</MostRecentTitle>
+
+            <PostsGrid>
+              {posts &&
+                posts.map((post, index) => (
+                  <span key={index}>
+                    <PostTitle>{post.title}</PostTitle>
+                    <Link href={`post/${post.slug.current}`}>
+                      <ImgWrapper>
+                        <img
+                          src={urlFor(post.image)}
+                          alt="main pic"
+                          className="img"
+                        />
+                      </ImgWrapper>
+                    </Link>
+                  </span>
+                ))}
+            </PostsGrid>
+          </PostsSection>
+        </PostsWrapper>
       </IndexGrid>
       <AboutSection />
     </>

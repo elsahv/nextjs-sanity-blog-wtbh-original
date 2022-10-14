@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  text-align: left;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
   font-size: 20px;
   padding: 60px 20px;
   color: #fff;
