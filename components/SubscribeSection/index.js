@@ -26,11 +26,12 @@ const MailchimpWrapper = styled.div`
 
 const ContentParagraph = styled.p`
   font-size: 18px;
-  padding: 20px 20px 5px;
-  color: aquamarine;
+  padding: 0px 20px 5px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
   opacity: 0.8;
   a {
-    color: #000;
+    color: aquamarine;
     padding: 0 6px;
   }
 

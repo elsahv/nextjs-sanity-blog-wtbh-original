@@ -57,6 +57,8 @@ export const Sq1 = styled.div`
 export const ContentTitle = styled.h4`
   font-size: 35px;
   padding-bottom: 15px;
+  text-shadow: 1px 1px 1px #000;
+  color: aquamarine;
 
   @media only screen and (max-width: 1024px) {
     padding-top: 40px;
@@ -67,18 +69,15 @@ export const ContentTitle = styled.h4`
   }
 `;
 
-export const ContentBody = styled.div`
+export const ContentBody = styled.p`
   font-size: 20px;
   line-height: 1.5em;
-
-  a {
-    color: #000;
-    padding: 0 5px;
-  }
+  color: #000;
+  // font-weight: bold;
+  text-shadow: 1px 1px 1px gray;
 
   @media only screen and (max-width: 531px) {
     font-size: 18px;
-    // padding: 0 50px;
   }
 `;
 

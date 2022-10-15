@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.h2`
   font-size: 25px;
   display: flex;
   justify-content: center;
   padding: 15px 0;
   font-size: 20px;
-  padding: 60px 20px;
+  padding: 60px 30px;
   color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  background: coral;
+  border-bottom: solid 2px black;
 
   @media only screen and (max-width: 834px) {
-    background: #fff;
-    color: gray;
     padding: 30px 10px;
   }
 

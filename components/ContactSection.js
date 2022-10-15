@@ -17,6 +17,8 @@ const Wrapper = styled.div`
 export const ContentTitle = styled.h4`
   font-size: 35px;
   padding-bottom: 15px;
+  color: teal;
+  text-shadow: 1px 1px 1px #000;
 
   @media only screen and (max-width: 1024px) {
     font-size: 30px;
@@ -37,9 +39,12 @@ export const Sq3 = styled.div`
   padding: 65px;
   p {
     font-size: 22px;
+    color: teal;
+    font-weight: bold;
+    // text-shadow: 1px 1px 1px #fff;
   }
   a {
-    color: #000;
+    color: teal;
     padding: 5px;
   }
 
@@ -84,12 +89,11 @@ export const Body = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-top: 20px;
-  ul {
-    list-style: none;
-  }
+  color: #000;
   a {
-    margin: 0px 5px;
     color: #000;
+    margin: 0px 5px;
+    // font-weight: bold;
   }
   p {
     font-size: 22px;

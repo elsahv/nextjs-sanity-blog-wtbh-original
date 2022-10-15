@@ -20,7 +20,7 @@ export const SubFormContainer = styled.div`
 `;
 
 export const Input = styled.input`
-  padding: 8px 50px 8px 10px;
+  padding: 8px 90px 8px 10px;
   border: 1px solid #000;
   font-size: 16px;
   background: #fff;
@@ -32,12 +32,15 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  padding: 5px 10px;
-  margin-top: 20px; 
+  padding: 8px 20px;
+  margin-top: 20px;
+  border-radius: 5px; 
   border: solid 2px black;
   font-weight: bold;
   background: teal;
-  color: aquamarine;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  background: coral;
   cursor: pointer;
       /* :disabled {
         background: #636262;
@@ -46,6 +49,12 @@ export const Button = styled.button`
   :disabled {
     opacity: 0.6;
     cursor: not-allowed;
+  }
+  &:hover {
+    background: aquamarine;
+    color: #000;
+    text-shadow: none;
+    transition: 1s;
   }
 
 @media (max-width: 600px) {

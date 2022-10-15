@@ -52,6 +52,8 @@ export const PostTitle = styled.h2`
   padding: 10px 0px;
   text-align: center;
   text-transform: capitalize;
+  text-shadow: 1px 1px 1px teal;
+  color: #fff;
 `;
 
 export const MostRecentTitle = styled.h2`
@@ -59,6 +61,8 @@ export const MostRecentTitle = styled.h2`
   text-align: center;
   font-size: 25px;
   text-decoration: underline;
+  color: aquamarine;
+  text-shadow: 1px 1px 1px #000;
 `;
 
 export const PostsGrid = styled.div`
@@ -130,7 +134,7 @@ const Home = ({ posts }) => {
         </Aside>
         <PostsWrapper>
           <PostsSection>
-            <MostRecentTitle> Most Recent Posts</MostRecentTitle>
+            <MostRecentTitle>Most Recent Posts</MostRecentTitle>
             <PostsGrid>
               {posts &&
                 posts.map((post, index) => (
