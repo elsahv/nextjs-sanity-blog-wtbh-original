@@ -3,7 +3,6 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const MailchimpWrapper = styled.div`
-  // border-top: solid 2px black;
   padding-top: 50px;
   grid-area: right;
   display: grid;
@@ -12,8 +11,16 @@ const MailchimpWrapper = styled.div`
     "a"
     "b";
 
-  @media only screen and (max-width: 1024px) {
-    padding-top: 30px;
+  @media only screen and (max-width: 834px) {
+    padding-top: 0px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b";
+  }
+  @media only screen and (max-width: 600px) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a"
+      "b";
   }
 `;
 
@@ -29,7 +36,9 @@ const ContentParagraph = styled.p`
 
   @media only screen and (max-width: 1024px) {
     font-size: 15px;
-    padding-top: 50px;
+  }
+
+  @media only screen and (max-width: 834px) {
   }
 
   @media only screen and (max-width: 531px) {
@@ -38,11 +47,7 @@ const ContentParagraph = styled.p`
   }
 `;
 
-const MailchimpContainer = styled.div`
-  // background: green;
-  @media only screen and (max-width: 531px) {
-  }
-`;
+const MailchimpContainer = styled.div``;
 
 const SubscribeCTA = () => {
   return (

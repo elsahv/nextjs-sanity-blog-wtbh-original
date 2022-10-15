@@ -18,6 +18,10 @@ export const ContentTitle = styled.h4`
   font-size: 35px;
   padding-bottom: 15px;
 
+  @media only screen and (max-width: 1024px) {
+    font-size: 30px;
+  }
+
   @media only screen and (max-width: 531px) {
     padding-top: 20px;
   }
@@ -95,6 +99,12 @@ export const Body = styled.div`
   @media only screen and (max-width: 1024px) {
     padding: 0 50px;
     p {
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    h4 {
       font-size: 18px;
     }
   }

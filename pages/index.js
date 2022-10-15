@@ -25,7 +25,7 @@ export const IndexGrid = styled.div`
   grid-template-areas: "ls rs";
   grid-gap: 2em;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 834px) {
     grid-template-columns: 1fr;
     grid-template-areas:
       "ls"
@@ -38,13 +38,12 @@ export const Aside = styled.div`
   background: teal;
   border-right: solid 2px black;
   border-bottom: solid 2px black;
-  // border-top: solid 2px black;
   width: 400px;
   @media only screen and (max-width: 800px) {
     width: 200px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 834px) {
     width: 100%;
   }
 `;
@@ -56,14 +55,10 @@ export const PostTitle = styled.h2`
 `;
 
 export const MostRecentTitle = styled.h2`
-  // padding-left: 105px;
   padding-top: 55px;
   text-align: center;
   font-size: 25px;
   text-decoration: underline;
-  // border-bottom: solid 2px black;
-  // color: teal;
-  // text-shadow: 1px 1px 1px coral;
 `;
 
 export const PostsGrid = styled.div`
@@ -131,14 +126,11 @@ const Home = ({ posts }) => {
       <IndexGrid>
         <Aside>
           <Banner />
-
           <SubscribeSection />
         </Aside>
-
         <PostsWrapper>
           <PostsSection>
             <MostRecentTitle> Most Recent Posts</MostRecentTitle>
-
             <PostsGrid>
               {posts &&
                 posts.map((post, index) => (

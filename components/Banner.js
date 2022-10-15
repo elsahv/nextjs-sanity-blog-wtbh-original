@@ -9,11 +9,16 @@ export const Wrapper = styled.div`
   padding: 60px 20px;
   color: #fff;
 
+  @media only screen and (max-width: 834px) {
+    background: #fff;
+    color: gray;
+    padding: 30px 10px;
+  }
+
   @media only screen and (max-width: 600px) {
     font-size: 20px;
     padding-left: 30px;
     padding-top: 30px;
-    color: #000;
   }
 
   @media only screen and (max-width: 531px) {

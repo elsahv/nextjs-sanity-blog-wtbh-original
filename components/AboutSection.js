@@ -47,7 +47,7 @@ export const Sq1 = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 40px 100px;
+  padding: 0 60px 50px;
 
   @media only screen and (max-width: 1024px) {
     padding: auto;
@@ -58,13 +58,17 @@ export const ContentTitle = styled.h4`
   font-size: 35px;
   padding-bottom: 15px;
 
-  @media only screen and (max-width: 531px) {
-    padding-top: 20px;
+  @media only screen and (max-width: 1024px) {
+    padding-top: 40px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 30px;
   }
 `;
 
 export const ContentBody = styled.div`
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5em;
 
   a {
@@ -74,7 +78,7 @@ export const ContentBody = styled.div`
 
   @media only screen and (max-width: 531px) {
     font-size: 18px;
-    padding: 0 50px;
+    // padding: 0 50px;
   }
 `;
 
