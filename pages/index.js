@@ -39,12 +39,10 @@ export const Aside = styled.div`
   border-right: solid 2px black;
   border-bottom: solid 2px black;
   width: 400px;
-  @media only screen and (max-width: 800px) {
-    width: 200px;
-  }
 
   @media only screen and (max-width: 834px) {
     width: 100%;
+    // padding: 50px;
   }
 `;
 
@@ -78,16 +76,8 @@ export const PostsGrid = styled.div`
     padding: 20px 40px;
   }
 
-  @media only screen and (max-width: 834px) {
-    grid-template-columns: 1fr;
-    padding: 20px 60px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    padding: 40px 70px;
-  }
-
   @media only screen and (max-width: 531px) {
+    grid-template-columns: 1fr;
     padding: 20px;
   }
 `;
@@ -108,7 +98,7 @@ export const ImgWrapper = styled.div`
 
   @media only screen and (max-width: 1024px) {
     .img {
-      height: 400px;
+      height: 300px;
     }
   }
 `;

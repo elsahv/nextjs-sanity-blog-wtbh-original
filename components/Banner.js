@@ -14,6 +14,7 @@ export const Wrapper = styled.h2`
 
   @media only screen and (max-width: 834px) {
     padding: 30px 10px;
+    // border: none;
   }
 
   @media only screen and (max-width: 600px) {

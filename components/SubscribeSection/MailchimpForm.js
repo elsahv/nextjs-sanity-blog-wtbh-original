@@ -26,8 +26,10 @@ export const Input = styled.input`
   background: #fff;
 
   @media (max-width: 1024px) {
-    padding-right: 10px;
-    width: 200px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 531px) {
   }
 `;
 
@@ -58,8 +60,13 @@ export const Button = styled.button`
   }
 
 @media (max-width: 600px) {
-  margin-top: 10px;
-  margin-left: 0;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+@media (max-width: 510px) {
+  margin-bottom: 15px;
+  margin-left: 0px;
 }
 } 
 `;

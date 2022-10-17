@@ -12,11 +12,12 @@ const MailchimpWrapper = styled.div`
     "b";
 
   @media only screen and (max-width: 834px) {
-    padding-top: 0px;
+    padding: 20px 40px;
     grid-template-rows: 1fr;
     grid-template-areas: "a b";
   }
   @media only screen and (max-width: 600px) {
+    padding: 20px 10px;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "a"
@@ -26,7 +27,7 @@ const MailchimpWrapper = styled.div`
 
 const ContentParagraph = styled.p`
   font-size: 18px;
-  padding: 0px 20px 5px;
+  padding: 20px 20px 5px;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
   opacity: 0.8;
@@ -35,16 +36,10 @@ const ContentParagraph = styled.p`
     padding: 0 6px;
   }
 
-  @media only screen and (max-width: 1024px) {
-    font-size: 15px;
-  }
-
-  @media only screen and (max-width: 834px) {
-  }
-
   @media only screen and (max-width: 531px) {
-    font-size: 18px;
+    font-size: 17px;
     padding-top: 10px;
+    padding-bottom: 0;
   }
 `;
 

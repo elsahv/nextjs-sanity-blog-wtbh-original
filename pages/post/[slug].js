@@ -63,6 +63,10 @@ export const Title = styled.h2`
   text-transform: capitalize;
   color: aquamarine;
   text-shadow: 1px 1px 1px #000;
+
+  @media only screen and (max-width: 531px) {
+    font-size: 25px;
+  }
 `;
 
 export const BodyContent = styled.p`
