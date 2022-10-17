@@ -57,8 +57,8 @@ export const Sq1 = styled.div`
 export const ContentTitle = styled.h4`
   font-size: 35px;
   padding-bottom: 15px;
-  text-shadow: 1px 1px 1px #000;
-  color: aquamarine;
+  // text-shadow: 1px 1px 1px gray;
+  color: #000;
 
   @media only screen and (max-width: 1024px) {
     padding-top: 40px;
@@ -74,7 +74,7 @@ export const ContentBody = styled.p`
   line-height: 1.5em;
   color: #000;
   // font-weight: bold;
-  text-shadow: 1px 1px 1px gray;
+  // text-shadow: 1px 1px 1px gray;
 
   @media only screen and (max-width: 531px) {
     font-size: 18px;

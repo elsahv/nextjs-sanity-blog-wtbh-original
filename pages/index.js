@@ -52,7 +52,7 @@ export const PostTitle = styled.h2`
   padding: 10px 0px;
   text-align: center;
   text-transform: capitalize;
-  text-shadow: 1px 1px 1px teal;
+  text-shadow: 1px 1px 1px #000;
   color: #fff;
 `;
 
@@ -61,7 +61,7 @@ export const MostRecentTitle = styled.h2`
   text-align: center;
   font-size: 25px;
   text-decoration: underline;
-  color: aquamarine;
+  color: #fff;
   text-shadow: 1px 1px 1px #000;
 `;
 

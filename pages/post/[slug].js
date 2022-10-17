@@ -61,15 +61,19 @@ export const Title = styled.h2`
   text-align: center;
   padding: 30px;
   text-transform: capitalize;
+  color: aquamarine;
+  text-shadow: 1px 1px 1px #000;
 `;
 
-export const BodyContent = styled.div`
+export const BodyContent = styled.p`
   text-align: left;
   font-size: 18px;
   margin: 10px 250px 20px;
   line-height: 1.75;
   padding: 30px 280px;
   text-align: center;
+  color: teal;
+  font-weight: bold;
 
   @media only screen and (max-width: 1024px) {
     margin: 20px;

@@ -41,7 +41,6 @@ export const Sq3 = styled.div`
     font-size: 22px;
     color: teal;
     font-weight: bold;
-    // text-shadow: 1px 1px 1px #fff;
   }
   a {
     color: teal;
@@ -90,13 +89,16 @@ export const Body = styled.div`
   flex-direction: column;
   padding-top: 20px;
   color: #000;
+  h4 {
+    font-size: 20px;
+  }
   a {
     color: #000;
     margin: 0px 5px;
     // font-weight: bold;
   }
   p {
-    font-size: 22px;
+    font-size: 18px;
     padding-top: 15px;
   }
 
