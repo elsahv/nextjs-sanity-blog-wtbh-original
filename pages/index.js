@@ -11,7 +11,7 @@ import styled from "styled-components";
 // STYLES
 export const PostsWrapper = styled.div`
   background: orange;
-  border-left: solid 2px black;
+  border-left: solid 1px black;
 
   @media only screen and (max-width: 600px) {
     border-left: none;
