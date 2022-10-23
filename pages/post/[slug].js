@@ -76,7 +76,7 @@ export const BodyContent = styled.p`
   line-height: 1.75;
   padding: 30px 280px;
   text-align: center;
-  color: teal;
+  color: #000;
   font-weight: bold;
 
   @media only screen and (max-width: 1024px) {
