@@ -50,7 +50,7 @@ export const MainImgWrapper = styled.div`
 `;
 export const ImagesWrapper = styled.div`
   .postImage {
-    width: 800px;
+    width: 100%;
     border: solid 2px black;
     margin: 40px 0;
   }
@@ -69,7 +69,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const BodyContent = styled.p`
+export const BodyContent = styled.div`
   text-align: left;
   font-size: 18px;
   margin: 10px 250px 20px;
@@ -77,7 +77,7 @@ export const BodyContent = styled.p`
   padding: 30px 280px;
   text-align: center;
   color: #000;
-  font-weight: bold;
+  // font-weight: bold;
 
   @media only screen and (max-width: 1024px) {
     margin: 20px;
