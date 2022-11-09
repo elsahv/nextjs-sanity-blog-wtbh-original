@@ -113,10 +113,10 @@ const about = () => {
           <Sq1 id="square">
             <ContentTitle>About</ContentTitle>
             <ContentBody>
-              Hi there, I’m Elsa. I’ve started this blog to relearn some
-              nutrition facts, and build up my skills with web design and
-              development. I love food and food illustrations, which you will
-              see a lot with this site!
+              Hi there, my name is Elsa. I’m currently creating{" "}
+              <i>Writing to Better Health</i> to improve and build of my skills
+              in web design and software development. I love food and nutrition,
+              which you will see a lot with this site!
             </ContentBody>
           </Sq1>
 

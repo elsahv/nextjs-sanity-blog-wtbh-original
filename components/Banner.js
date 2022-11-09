@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.h2`
-  font-size: 25px;
+  font-size: 20x;
   display: flex;
   justify-content: center;
   padding: 15px 0;
@@ -31,7 +31,8 @@ export const Wrapper = styled.h2`
 const Banner = () => {
   return (
     <Wrapper id="home">
-      An illustrative blog about food and mental wellness...
+      An up and coming blog about food and mental wellness... Content coming
+      soon!
     </Wrapper>
   );
 };

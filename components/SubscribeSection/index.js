@@ -25,8 +25,8 @@ const MailchimpWrapper = styled.div`
   }
 `;
 
-const ContentParagraph = styled.p`
-  font-size: 18px;
+const ContentParagraph = styled.h2`
+  font-size: 20px;
   padding: 20px 20px 5px;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
@@ -49,8 +49,7 @@ const SubscribeCTA = () => {
   return (
     <MailchimpWrapper>
       <ContentParagraph>
-        A weekly newsletter regarding: food, plants, and other writings...
-        Subscribe for post updates!
+        A newsletter under construction, coming soon!
       </ContentParagraph>
       <MailchimpContainer>
         <MailchimpForm />
