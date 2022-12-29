@@ -9,7 +9,7 @@ export const Wrapper = styled.h2`
   padding: 60px 30px;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
-  background: coral;
+  background: #588157;
   border-bottom: solid 2px black;
 
   @media only screen and (max-width: 834px) {

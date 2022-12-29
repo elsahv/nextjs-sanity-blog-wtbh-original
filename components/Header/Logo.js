@@ -4,13 +4,9 @@ import styled from "styled-components";
 const LogoWrapper = styled.div`
   font-size: 32px;
   font-weight: 900;
-  line-height: 1;
-  text-decoration: none;
-  color: gray;
-  text-shadow: 1px 1px 1px black;
-  margin-top: 30px;
+  // text-shadow: 1px 1px 1px maroon;
   a {
-    color: gray;
+    color: #000;
     text-decoration: none;
   }
 `;
@@ -19,7 +15,7 @@ const Logo = () => {
   return (
     <>
       <LogoWrapper>
-        <Link href="/">Writing to Better Health</Link>
+        <Link href="/">fl-TEMPLATE MULTIPLE PAGES</Link>
       </LogoWrapper>
     </>
   );

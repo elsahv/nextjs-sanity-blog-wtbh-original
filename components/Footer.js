@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const Footer = () => {
   return (
     <>
-      <Wrapper>Writing to Better Health- copyright @2022</Wrapper>
+      <Wrapper>The Indoor Jungle Project- copyright @2022</Wrapper>
     </>
   );
 };

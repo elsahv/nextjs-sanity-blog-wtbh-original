@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "../public/images/about-pic.jpg";
+import profilePic from "../public/images/sketch1.jpg";
 import styled from "styled-components";
 
 // STYLES
